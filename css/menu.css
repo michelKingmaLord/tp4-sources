@@ -30,7 +30,7 @@
 .nav__control:hover,
 .nav__control:active {
     color:#fff;
-    background-color: yellow;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav__control:focus {
@@ -45,8 +45,10 @@
      * Les règles outline-offset et outline permettent
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
-    outline-offset: -5px;
-    outline: white auto 5px;
+
+    /* outline-offset: -5px; */
+    /* outline: rgba(255, 255, 255, 0.25) auto 5px; */
+
 }
 
 /* Liste du menu */
@@ -59,6 +61,7 @@
 @media (min-width: 600px) {
     .nav__list-item {
         display: inline-block;
+        background-color: transparent;
     }
 }
 
@@ -88,8 +91,9 @@
 
 .nav__link:focus,
 .nav__link:focus-visible {
+    border-left: #dba70d solid 2px;
     outline-offset: -5px;
-    outline: none;*/
+    outline: none;
 }
 
 /** Une classe nav__link--active
