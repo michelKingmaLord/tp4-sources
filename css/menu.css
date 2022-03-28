@@ -17,7 +17,7 @@
 /* Bouton du menu */
 .nav__control {
     color: aliceblue; /* pour changer la couleur par défaut des textes de bouton (noire) */
-    background-color: rgba(145, 0, 145, 0.2);
+    background-color: transparent;
     border: none;
     padding: 10px;
     min-width: 40px;
@@ -30,7 +30,7 @@
 .nav__control:hover,
 .nav__control:active {
     color:#fff;
-    background-color: darkmagenta;
+    background-color: yellow;
 }
 
 .nav__control:focus {
@@ -46,7 +46,7 @@
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;
+    outline: white auto 5px;
 }
 
 /* Liste du menu */
@@ -64,7 +64,7 @@
 
 /* Liens du menu */
 .nav__link {
-    background-color: rgba(145, 0, 145, 0.2);
+    background-color: transparent;
     display: block;
     padding: 5px 10px;
     width: 100%;
@@ -77,21 +77,19 @@
 }
 
 .nav__link:hover {
-    color:#fff;
-    background-color: darkmagenta;
+    color:#dba70d;
+    background-color: transparent;
 }
 
 .nav__link:active {
     color:#fff;
-    background-color: magenta;
 }
 
 
 .nav__link:focus,
 .nav__link:focus-visible {
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;
-    /*outline: none;*/
+    outline: none;*/
 }
 
 /** Une classe nav__link--active

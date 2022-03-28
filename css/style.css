@@ -148,14 +148,19 @@ figcaption {
 .logo{
     display: inline-block;
     width: 150px;
+    float: left;
 }
 @media (min-width: 700px) {
     .logo {
         width: 180px;
+        float: left;
     }
 }
 
-
+/* Navigation */
+.nav{
+    text-align: right;
+}
 
 
 /* Accroche */
