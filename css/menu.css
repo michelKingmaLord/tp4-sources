@@ -68,7 +68,7 @@
 /* Liens du menu */
 .nav__link {
     background-color: transparent;
-    display: block;
+    display: flex;
     padding: 5px 10px;
     width: 100%;
 }
@@ -80,19 +80,18 @@
 }
 
 .nav__link:hover {
+    /* background-color: transparent; */
     color:#dba70d;
-    background-color: transparent;
 }
 
 .nav__link:active {
-    color:#fff;
+    color:#dba70d;
 }
 
 
 .nav__link:focus,
 .nav__link:focus-visible {
-    border-left: #dba70d solid 2px;
-    outline-offset: -5px;
+    border-left: #dba70d solid 4px;
     outline: none;
 }
 
@@ -100,7 +99,7 @@
     sert à définir un état différent
     pour l'item de menu actif
     **/
-.nav__link--active {
+/* .nav__link--active {
     border-left: 5px solid rgba(101, 68, 180, 1);
 }
 @media (min-width: 600px) {
@@ -108,7 +107,7 @@
         border-left:none;
         border-bottom:5px solid rgba(101, 68, 180, 1);
     }
-}
+} */
 
 
 /**
