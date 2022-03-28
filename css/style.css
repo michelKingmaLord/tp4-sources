@@ -146,11 +146,12 @@ figcaption {
 
 /* Menu principal */
 .logo{
-
+    display: inline-block;
+    width: 150px;
 }
 @media (min-width: 700px) {
     .logo {
-
+        width: 180px;
     }
 }
 
