@@ -14,10 +14,10 @@
 
 /****** Base commune *******/
 .nav{
+    text-align: right;
     font-family: var(--fontfamily);
     font-weight: bold;
     color: var(--color-text);
-    /* Color text */
 }
 
 
@@ -59,13 +59,23 @@
     background-color: var(--color-G);
 }
 
+.nav__control:before {
+    display: inline-block;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    background-image: url("../images/ico-fermer.svg");
+    vertical-align: top;
+    margin-right: .25em;
+}
+
 /* Liste du menu */
 .nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
     max-height: none;
-    text-align: left;
+    text-align: right;
 }
 @media (min-width: 600px) {
     .nav__list-item {
@@ -80,12 +90,13 @@
     display: flex;
     padding: 5px 10px;
     width: 100%;
+    color: white;
 }
 
 .nav__link:link,
 .nav__link:visited {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 .nav__link:hover {
@@ -103,10 +114,9 @@
     }
 } 
 
-
 .nav__link:focus,
 .nav__link:focus-visible {
-    border-left: var(--color-Y) solid 5px;
+    border-bottom: var(--color-Y) solid 5px;
     outline: none;
 }
 
