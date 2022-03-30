@@ -58,7 +58,7 @@
     outline: var(--color-Y) groove 3px;
     background-color: var(--color-G);
 }
-
+/*  Bouton X lors de l'ouverture du button hamburger */
 .nav__control:before {
     display: inline-block;
     content: " ";
@@ -68,6 +68,16 @@
     vertical-align: top;
     margin-right: .25em;
 }
+/*  Hamburger button */
+.nav--closed .nav__control:before{
+    display: inline-block;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    background-image: url("../images/ico-menu.svg");
+    vertical-align: top;
+    margin-right: .25em;
+    }
 
 /* Liste du menu */
 .nav__list {
@@ -116,23 +126,17 @@
 
 .nav__link:focus,
 .nav__link:focus-visible {
-    border-bottom: var(--color-Y) solid 5px;
+    border-left: var(--color-Y) solid 5px;
     outline: none;
 }
-
-/** Une classe nav__link--active
-    sert à définir un état différent
-    pour l'item de menu actif
-    **/
-/* .nav__link--active {
-    border-left: 5px solid rgba(101, 68, 180, 1);
-}
 @media (min-width: 600px) {
-    .nav__link--active {
-        border-left:none;
-        border-bottom:5px solid rgba(101, 68, 180, 1);
+    .nav__link:focus,
+    .nav__link:focus-visible {
+    border-left: none;
+    border-bottom: var(--color-Y) solid 5px;
+    outline: none;;
     }
-} */
+}
 
 
 /**
