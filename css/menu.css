@@ -36,7 +36,7 @@
 }
 .nav__control:hover,
 .nav__control:active {
-    color:#fff;
+    color:var(--color-text);
     background-color: var(--color-G);
 }
 
@@ -100,13 +100,13 @@
     display: flex;
     padding: 5px 10px;
     width: 100%;
-    color: white;
+    color: var(--color-text);
 }
 
 .nav__link:link,
 .nav__link:visited {
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
 }
 
 .nav__link:hover {
