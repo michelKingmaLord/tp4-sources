@@ -3,12 +3,12 @@
 
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
-    /** À DÉFINIR
-      * Couleur d'interactivité (jaune): #dba70d
-      * Blanc avec effet de transparence : rgba(255, 255, 255, 0.25)
-      * Valeur de border-radius des éléments :
-      */
-}
+    --color-text: #fff;
+    --color-Y: #dba70d;
+    --color-G: rgba(255, 255, 255, 0.25); 
+    --font-family: Raleway, sans-serif; 
+    --border:3px solid #dba70d;
+    }
 
 /*** Clearfix ***/
 .clearfix::after {

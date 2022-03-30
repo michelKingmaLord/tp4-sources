@@ -13,6 +13,13 @@
  */
 
 /****** Base commune *******/
+.nav{
+    font-family: var(--fontfamily);
+    font-weight: bold;
+    color: var(--color-text);
+    /* Color text */
+}
+
 
 /* Bouton du menu */
 .nav__control {
@@ -30,7 +37,7 @@
 .nav__control:hover,
 .nav__control:active {
     color:#fff;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: var(--color-G);
 }
 
 .nav__control:focus {
@@ -48,7 +55,8 @@
 
     /* outline-offset: -5px; */
     /* outline: rgba(255, 255, 255, 0.25) auto 5px; */
-
+    outline: var(--color-Y) groove 3px;
+    background-color: var(--color-G);
 }
 
 /* Liste du menu */
@@ -57,6 +65,7 @@
     padding: 0;
     list-style: none;
     max-height: none;
+    text-align: left;
 }
 @media (min-width: 600px) {
     .nav__list-item {
@@ -81,17 +90,23 @@
 
 .nav__link:hover {
     /* background-color: transparent; */
-    color:#dba70d;
+    color: var(--color-Y);
 }
 
-.nav__link:active {
-    color:#dba70d;
+.nav__link--active {
+    border-left: 5px solid var(--color-Y);
 }
+@media (min-width: 600px) {
+    .nav__link--active {
+        border-left:none;
+        border-bottom:5px solid var(--color-Y);
+    }
+} 
 
 
 .nav__link:focus,
 .nav__link:focus-visible {
-    border-left: #dba70d solid 4px;
+    border-left: var(--color-Y) solid 5px;
     outline: none;
 }
 
